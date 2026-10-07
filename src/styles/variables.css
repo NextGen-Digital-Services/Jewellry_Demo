@@ -1,0 +1,32 @@
+:root {
+  /* Brand Palette — Italian Luxury Flat */
+  --ivory: #F6F1E7;
+  --bone: #EDE5D4;
+  --bordeaux: #5B1A24;
+  --bordeaux-dark: #3E1018;
+  --gold: #B08D4C;
+  --gold-light: #D9C08A;
+  --ink: #1B1714;
+  --stone: #6F665B;
+  --line: #D8CFBD;
+  --white: #FFFFFF;
+  --error: #9E2A2B;
+  --success: #2A7B4C;
+  --info: #2B5B84;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Jost', system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --container-max-width: 1280px;
+  --header-height: 80px;
+  --announcement-height: 38px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-slow: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}

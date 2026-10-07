@@ -1,0 +1,159 @@
+/* Admin Panel Styles */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F3F1EC;
+  color: var(--ink);
+}
+
+.admin-sidebar {
+  width: 260px;
+  background-color: var(--ink);
+  color: var(--ivory);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  transition: width var(--transition-fast);
+}
+
+.admin-sidebar.collapsed {
+  width: 80px;
+}
+
+.admin-sidebar-header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.admin-brand {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--gold-light);
+  letter-spacing: 0.1em;
+}
+
+.admin-nav {
+  flex: 1;
+  padding: 1.5rem 0;
+  overflow-y: auto;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.88rem;
+  color: #C5BFB5;
+  transition: all var(--transition-fast);
+}
+
+.admin-nav-item:hover, .admin-nav-item.active {
+  background-color: var(--bordeaux);
+  color: var(--ivory);
+}
+
+.admin-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.admin-topbar {
+  height: var(--header-height);
+  background-color: var(--white);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.admin-content {
+  padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Dashboard KPI Card */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kpi-card {
+  background-color: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kpi-val {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--bordeaux);
+  margin-top: 0.4rem;
+}
+
+/* Admin Data Tables */
+.admin-table-container {
+  background-color: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.admin-table th {
+  background-color: var(--ivory);
+  padding: 1rem 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--stone);
+  border-bottom: 1px solid var(--line);
+}
+
+.admin-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+.admin-table tr:hover {
+  background-color: #FAF8F5;
+}
+
+/* Status Badges */
+.status-pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-pill.confirmed { background-color: #E6F4EA; color: #137333; }
+.status-pill.shipped { background-color: #E8F0FE; color: #1A73E8; }
+.status-pill.crafting { background-color: #FEF7E0; color: #B06000; }
+.status-pill.delivered { background-color: #CEEAD6; color: #0D652D; }
+.status-pill.cancelled { background-color: #FCE8E6; color: #C5221F; }
